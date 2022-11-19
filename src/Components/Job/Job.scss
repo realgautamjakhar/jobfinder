@@ -116,7 +116,9 @@ footer{
             align-items: center;
             justify-content: center;
             padding-top: 4rem;
+            padding-bottom: 1rem;
             gap: 1rem;
+            text-align: center;
             img{
                   position: absolute;
                   top: -3rem;
@@ -125,9 +127,6 @@ footer{
                   height: 100px;
                   box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.1);
                   border-radius: 1rem;
-            }
-            button{
-                  margin-bottom: 1rem;
             }
             
       }
