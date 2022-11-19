@@ -7,12 +7,12 @@ import "./Layout.scss";
 const Layout = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <section id={theme}>
+    <>
       <Header />
       <section id={theme}>
         <Outlet />
       </section>
-    </section>
+    </>
   );
 };
 
