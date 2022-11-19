@@ -8,6 +8,7 @@
       p{
             color: var(--text-secondary);
       }
+      
 }
 .companyinfo{
       display: grid;
@@ -16,25 +17,20 @@
       min-height: 100px;
       gap: 1rem;
       background-color: var(--cardbg);
-      border-radius: 1rem;
       margin-top: 4rem;
+      box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.1);
       img{
             width: 100%;
             height: 100%;
             object-fit: contain;
             padding: 0rem 1rem;
       }
-      button{
-            width: max-content;
+      .seconday-btn{
             margin: auto;
-            font-size: 1.2rem;
-            border: none;
-            background-color: var(--accent-color);
-            padding: .5rem 1rem;
-            border-radius: 1rem;
-            
             a{ 
-                  color: white;
+                  color: var(--accent-color);
+                  
+                  font-weight: 700;
                   text-decoration: none;
                   text-transform: capitalize;
             }
@@ -47,10 +43,20 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.1);
 
       .apply-section{
             display: grid;
             grid-template-columns: auto 200px;
+
+            div{
+                  display:flex ;
+                  flex-direction: column;
+                  gap: .5rem;
+                  p{
+                        color: var(--accent-color);
+                  }
+            }
             button{
                   margin: auto;
             }
@@ -78,27 +84,14 @@
             }
       }
 }
-.btn1{
-      background-color: #5964e0;
-      color: white;
-      padding: .5rem 1rem;
-      border: none;
-      text-transform: capitalize;
-      font-size: 1rem;
-      font-weight: 900;
-      border-radius: .5rem;
-}
-.btn1:hover{
-      background-color:#939bf4 ;
-      cursor: pointer;
-      transition: all ease-in-out .5s;
-}
+
 footer{
       width: 100%;
       margin: auto;
-      margin-top: 2rem;
+      margin-top: 3rem;
       padding: 2rem 0rem ;
       background-color: var(--cardbg);
+      box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.1);
       div{ 
             display: grid;
             grid-template-columns: auto 200px;
@@ -109,9 +102,6 @@ footer{
                   flex-direction: column;
                   margin: revert;
             }
-      }
-      button{
-            margin: auto;
       }
 }
 
@@ -133,32 +123,32 @@ footer{
 
                   width: 100px;
                   height: 100px;
+                  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.1);
+                  border-radius: 1rem;
             }
             button{
                   margin-bottom: 1rem;
             }
             
       }
+      .primary-btn{
+            width: 100%;
+            text-align: center;
+      }
       .job-description{
-
             .apply-section{
                   grid-template-columns: 1fr;
                   width: 100%;
                   gap: 2rem;
-
                   button{
                         width: 100%;
                   }
             }
-
       }
       footer{
             div{
                   grid-template-columns: auto;
                   padding: 1rem;
-                  button{
-                        width: 100%;
-                  }
             }
       }
       .footer-content{

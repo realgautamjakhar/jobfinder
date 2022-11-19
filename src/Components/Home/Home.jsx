@@ -87,7 +87,7 @@ const Home = () => {
                 <input type="checkbox" id="fulltimeonly" name="fulltimeonly" />
                 <label htmlFor="fulltimeonly"> Full time only</label>
               </div>
-              <button type="submit" className="btn1">
+              <button type="submit" className="primary-btn">
                 Search
               </button>
             </form>
@@ -123,11 +123,11 @@ const Home = () => {
               name="locationsearch"
             />
           </div>
-          <div>
+          <div className="checkbox">
             <input type="checkbox" id="fulltimeonly" name="fulltimeonly" />
             <label htmlFor="fulltimeonly"> Full time only</label>
           </div>
-          <button type="submit" className="btn1">
+          <button type="submit" className="primary-btn">
             Search
           </button>
         </form>
@@ -176,7 +176,7 @@ const Home = () => {
                   </div>
                   <h3 className="job-position">{position}</h3>
                   <h2 className="company-Name">{company}</h2>
-                  <p className="accent-color location">{location}</p>
+                  <p className="accent-color semibold">{location}</p>
                 </NavLink>
               </motion.li>
             );

@@ -2,10 +2,10 @@
 
 header{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
-      height: 7rem;
-      padding: 2rem ;
+      
+      padding:3rem 2rem;
       h2{
             font-size: 2.5rem;
       }
@@ -19,7 +19,7 @@ header{
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: .5rem;
 }
 .switch{
       position: relative;
@@ -51,13 +51,10 @@ header{
       width: 16px;
       left: 4px;
       bottom: 4px;
-      background-color: blue;
+      background-color: var(--accent-color);
       transition: .4s;
       border-radius: 50%;
-}
-
-    
-    
+}   
 input:checked + .slider::before{
       transform: translateX(20px);
 }

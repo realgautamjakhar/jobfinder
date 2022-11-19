@@ -1,12 +1,9 @@
 import React from "react";
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { ThemeContext } from "../../App";
 import "./Header.scss";
 const Header = () => {
   function toggletheme(event) {
     const root = document.querySelector("#root");
-    console.log(root);
     if (event.target.checked) {
       root.style.setProperty("--primary-bg", "#121721");
       root.style.setProperty("--cardbg", "#19202d");

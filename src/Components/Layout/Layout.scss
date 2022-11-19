@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
 *,*::after,*::before{
       margin: 0;
       padding: 0;
@@ -6,7 +7,8 @@
 }
 
 #root{
-      
+
+      //Changing theme by changing this
       --primary-bg:#f4f6f8;
       --cardbg:#fff;
       --text-primary:#19202d;;
@@ -17,8 +19,10 @@
       font-family: 'Kumbh Sans', sans-serif; 
       background: var(--primary-bg) url(assets/desktop/bg-pattern-header.svg) no-repeat top ;
       background-size: contain;
-      background-color: var(--primary-bg);
       min-height: 100vh;
+
+      //Background top image
+
       @media screen and (max-width:1200px) {
             background-image: url(assets/tablet/bg-pattern-header.svg);
       }
@@ -26,19 +30,59 @@
             background-image: url(assets/mobile/bg-pattern-header.svg);
       }
 }
-
+//Styling all heading with text primary color
 h1,h2,h3,h4,h5,h6{
       color: var(--text-primary);
 }
+
+//accent color class directly using in some element
 .accent-color{
       color:#5964e0;
 }
 
-.location{
+
+.semibold{
       font-weight: 700;
 }
 
 .postedAt{
       font-size: 1rem;
       color: var(--text-secondary);
+}
+
+
+//Buttons 
+.primary-btn{
+      background-color: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      text-transform: capitalize;
+      font-size: 1rem;
+      font-weight: 900;
+      border-radius: .5rem;
+      margin: auto;
+      a{
+            text-decoration: none;
+            color: white;
+      }
+}
+.primary-btn:hover{
+      background-color:#939bf4 ;
+      cursor: pointer;
+      transition: all ease-in-out .5s;
+}
+.seconday-btn{
+      background-color: rgba(89, 100, 224, 0.1);
+      color: var(--accent-color);
+      border: none;
+      color: var(--accent-color);
+      padding: 1rem 2rem;
+      border-radius: .5rem;
+      font-size: 1rem;
+}
+.seconday-btn:hover{
+      background-color: transparent;
+      cursor: pointer;
+      transition: all ease-in-out .5s;
 }

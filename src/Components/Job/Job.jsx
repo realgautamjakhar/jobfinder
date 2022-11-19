@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../../public/data.json";
 import "./Job.scss";
 import { motion } from "framer-motion";
 const Job = () => {
-  const [listCount, setlistCount] = useState(0);
   const { jobid } = useParams();
   const {
     company,
@@ -38,9 +36,9 @@ const Job = () => {
             <h2>{company}</h2>
             <p>{website}</p>
           </div>
-          <button>
+          <div className="seconday-btn">
             <a href={website}>company website</a>
-          </button>
+          </div>
         </motion.div>
 
         <motion.div
@@ -54,16 +52,11 @@ const Job = () => {
                 {postedAt} • {contract}
               </span>
               <h2>{position}</h2>
-              <p className="accent-color location">{location}</p>
+              <p className="semibold">{location}</p>
             </div>
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [1, 0.7, 1] }}
-              transition={{ repeat: Infinity, duration: 5 }}
-              className="btn1"
-            >
-              Apply Now
-            </motion.button>
+            <div className="primary-btn">
+              <a href={website}>Apply Now</a>
+            </div>
           </div>
 
           <p>{description}</p>
@@ -115,9 +108,11 @@ const Job = () => {
         <div>
           <div className="footer-content">
             <h2>{position}</h2>
-            <h5>{company}</h5>
+            <p>{company}</p>
           </div>
-          <button className="btn1">Apply</button>
+          <div className="primary-btn">
+            <a href={website}>Apply Now</a>
+          </div>
         </div>
       </footer>
     </>
