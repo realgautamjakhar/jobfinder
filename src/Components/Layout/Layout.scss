@@ -6,25 +6,25 @@
 }
 
 #root{
-      font-family: 'Kumbh Sans', sans-serif; 
+      
       --primary-bg:#f4f6f8;
       --cardbg:#fff;
       --text-primary:#19202d;;
       --text-secondary:#6e8098;
       --accent-color:#5964e0;
-      background-image: url(public/assets/desktop/bg-pattern-header.svg);
-      background-repeat: no-repeat;
-      background-position: top;
+}
+.layout{
+      font-family: 'Kumbh Sans', sans-serif; 
+      background: var(--primary-bg) url(assets/desktop/bg-pattern-header.svg) no-repeat top ;
       background-size: contain;
       background-color: var(--primary-bg);
-
+      min-height: 100vh;
       @media screen and (max-width:1200px) {
-            background-image: url(public/assets/tablet/bg-pattern-header.svg);
+            background-image: url(assets/tablet/bg-pattern-header.svg);
       }
       @media screen and (max-width:600px) {
-            background-image: url(public/assets/mobile/bg-pattern-header.svg);
+            background-image: url(assets/mobile/bg-pattern-header.svg);
       }
-
 }
 
 h1,h2,h3,h4,h5,h6{
