@@ -12,8 +12,6 @@
       --text-primary:#19202d;;
       --text-secondary:#6e8098;
       --accent-color:#5964e0;
-}
-body{
       background-image: url(public/assets/desktop/bg-pattern-header.svg);
       background-repeat: no-repeat;
       background-position: top;
@@ -26,8 +24,12 @@ body{
       @media screen and (max-width:600px) {
             background-image: url(public/assets/mobile/bg-pattern-header.svg);
       }
+
 }
 
+h1,h2,h3,h4,h5,h6{
+      color: var(--text-primary);
+}
 .accent-color{
       color:#5964e0;
 }
