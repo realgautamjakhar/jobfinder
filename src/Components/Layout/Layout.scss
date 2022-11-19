@@ -24,10 +24,10 @@
       //Background top image
 
       @media screen and (max-width:1200px) {
-            background-image: url(assets/tablet/bg-pattern-header.svg);
+            background-image: url(/assets/tablet/bg-pattern-header.svg);
       }
       @media screen and (max-width:600px) {
-            background-image: url(assets/mobile/bg-pattern-header.svg);
+            background-image: url(/assets/mobile/bg-pattern-header.svg);
       }
 }
 //Styling all heading with text primary color
